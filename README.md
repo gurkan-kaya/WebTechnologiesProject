@@ -2,7 +2,7 @@
 
  WEB TEKNOLOJİLERİ PROJE TANIMI:
  
-•	Derste anlatılan HTML,CSS,JAVASCRITPT gibi bilgileri kullanarak responsive tasarım bir website geliştirmek.
+•	Derste anlatılan HTML,CSS,JAVASCRIPT gibi bilgileri kullanarak responsive tasarım bir website geliştirmek.
 
 PROJENİN İÇERİĞİ:
 
