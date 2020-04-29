@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+body {
+    position: relative;
+    background-image: url("img/contact.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+
+
+
+
+.form {
+    margin-top: 59px;
+
+    padding: 20px;
+    width: 70%;
+    float: left;
+
+}
+
+
+
+
+
+.formcontrol {
+
+    width: 100%;
+    padding: 7px 12px;
+    border: 5px solid #ced4da;
+    border-radius: 3px;
+
+}
+
+.formgroup {
+    margin-bottom: 8px;
+}
+
+.form-control:focus {
+    border-color: #80bdff;
+    outline: 0;
+}
+
+label {
+    margin-bottom: 3px;
+    display: inline-block;
+}
+
+
+
+.big {
+    width: 0.8em;
+    height: 0.8em;
+}
+
+.buton {
+    padding: 6px 12px;
+    border-radius: 3px;
+    border-color: #000000;
+    background-color: #122336;
+    color: white;
+    margin-right: 25px;
+}
+
+.buton:hover {
+    background-color: #0069d9;
+
+}
+
+.iletisimbilgi {
+    margin-top: 59px;
+    width: 30%;
+    float: left;
+    height: 586px;
+    font-size: 25px;
+    
+
+}
+
+
+
+.ie {
+    padding: 10px;
+    width: 100%;
+    background-color: rgb(230, 230, 250, .5);
+    
+}
+
+
+.iletisimbilgi p {
+    padding-left: 10px;
+    padding-bottom: 5px;
+    color: rgb(5, 32, 59);
+}
+
+@media screen and (max-width: 1100px) {
+
+    .form {
+
+        width: 100%;
+        margin: 1px;
+
+
+    }
+
+    .iletisimbilgi {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+footer {
+    clear: both;
+}

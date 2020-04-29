@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim</title>
+    <link rel="stylesheet" href="iletisim.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <script src="https://kit.fontawesome.com/a390e7cea1.js" crossorigin="anonymous"></script>
+
+
+
+</head>
+
+<body>
+
+    <nav class="navbar bg-dark navbar-dark navbar-expand-lg sticky-top opacity ">
+
+        <a href="" class="navbar-brand ">
+            <img id="logo" src="img/logom.png" alt="">
+        </a>
+
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse " id="collapsibleNavbar">
+
+            <ul class="navbar-nav ">
+                <li class="nav-item">
+                    <a href="hakkimda.html" class="nav-link">
+                        <h3>Hakkımda </h3>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="ozgecmisim.html" class="nav-link">
+                        <h3>Özgeçmişim</h3>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="sehrim.html" class="nav-link">
+                        <h3>Şehrim</h3>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="mirasimiz.html" class="nav-link">
+                        <h3>Mirasımız</h3>
+                    </a>
+                </li>
+
+                <li class="nav-item ">
+                    <a href="iletisim.html" class="nav-link">
+                        <h3>İletişim</h3>
+                    </a>
+                </li>
+
+
+                <li id="lgn" class="nav-item ">
+                    <a href="#" class="nav-link">
+                        <h3>Login</h3>
+                    </a>
+                </li>
+
+
+
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <main>
+        <form class="form">
+
+            <div class="formgroup">
+                <label for="Name"> <h2>Ad-Soyad</h2> </label>
+                <input class="formcontrol" type="text" name="Name" placeholder="Adınızı giriniz" id="">
+            </div>
+
+            <div class="formgroup">
+                <label for="email"> <h2>e-Mail</h2> </label>
+                <input class="formcontrol" type="text" name="email" placeholder="Mail adresinizi giriniz">
+            </div>
+
+            <div class="formgroup">
+                <label for="message"> <h2>Mesaj</h2> </label>
+                <textarea class="formcontrol" name="message" id="" placeholder="Mesajınızı giriniz"></textarea>
+            </div>
+
+            <div class="formgroup">
+                <label for="country"><h2>Şehir</h2> </label>
+                <select class="formcontrol" name="city" id="">
+
+                    <option value="Ankara">Ankara</option>
+                    <option value="İstanbul">İstanbul</option>
+                    <option value="İzmir">İzmir</option>
+                    <option value="Sakarya">Sakarya</option>
+                    <option value="Kırşehir">Kırşehir</option>
+                    <option value="Diğer">Diğer</option>
+                </select>
+            </div>
+
+            <div class="formgroup">
+                <br>
+               <h2>Doğum günü:</h2>  <input type="date" name="bday" class="formcontrol">
+            </div>
+
+            <div class="formgroup" style="font-size: xx-large;">
+                <br>
+              Erkek <input type="radio" class="big" name="cinsiyet">
+               Kadın  <input type="radio" class="big" name="cinsiyet">
+            </div>
+            <br>
+            <input class="buton" type="submit" value="Gönder">
+            <input class="buton" type="reset" value="Temizle">
+
+        </form>
+
+        <div class="iletisimbilgi">
+
+            <h2 class="ie">İletişim</h2>
+
+            <h4 class="ie">Telefon</h4>
+            <p class="ie">+90 554 890 33 74</p>
+
+            <h4 class="ie">Mail</h4>
+            <p class="ie">gurkan.kaya@ogr.sakarya.edu.tr</p>
+
+        </div>
+
+    </main>
+
+
+    <footer style="bottom: 0;">
+        <div id="share">
+
+
+            <a href="https://www.linkedin.com/in/g%C3%BCrkan-kaya-3a49ab162?trk=people-guest_people_search-card">
+                <i class="fab fa-linkedin fa-3x pr-3"></i>
+            </a>
+
+            <a href="https://www.instagram.com/qurkankaya">
+                <i class="fab fa-instagram fa-3x"></i>
+            </a>
+            <h5 class="header">Gürkan Kaya 2020</h5>
+        </div>
+
+    </footer>
+
+
+
+    <script src="js/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>
