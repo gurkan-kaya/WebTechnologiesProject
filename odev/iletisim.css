@@ -79,21 +79,17 @@ label {
 
 .iletisimbilgi {
     margin-top: 59px;
-    width: 30%;
-    float: left;
     height: 586px;
-    font-size: 25px;
-    
-
+    font-size: 25pxs
 }
 
 
 
 .ie {
     padding: 10px;
-    width: 100%;
-    background-color: rgb(230, 230, 250, .5);
-    
+
+    background-color: rgba(165, 207, 247, 0.5);
+
 }
 
 
@@ -118,6 +114,14 @@ label {
         height: auto;
     }
 
+}
+
+.iletisimphp{
+    margin-top: 3%;
+    background-color: rgb(248, 247, 247);
+    border: solid   blue 1px;
+    border-radius: 25px;
+    box-shadow: 10px 10px 10px 0px rgba(131, 130, 130, 0.42);
 }
 
 footer {

@@ -19,7 +19,7 @@
 
     <nav class="navbar bg-dark navbar-dark navbar-expand-lg sticky-top opacity ">
 
-        <a href="" class="navbar-brand ">
+        <a href="hakkimda.html" class="navbar-brand ">
             <img id="logo" src="img/logom.png" alt="">
         </a>
 
@@ -60,7 +60,7 @@
 
 
                 <li id="lgn" class="nav-item ">
-                    <a href="#" class="nav-link">
+                    <a href="login.php" class="nav-link">
                         <h3>Login</h3>
                     </a>
                 </li>
@@ -74,65 +74,96 @@
 
 
     <main>
-        <form class="form">
+        <div class="container-fluid">
 
-            <div class="formgroup">
-                <label for="Name"> <h2>Ad-Soyad</h2> </label>
-                <input class="formcontrol" type="text" name="Name" placeholder="Adınızı giriniz" id="">
+            <div class="row">
+                <div class="col-lg-7">
+
+                    <form class="form" onsubmit="return formfunction(this)" action="iletisimgoruntule.php"
+                        method="POST">
+
+                        <div class="formgroup">
+                            <label for="Name">
+                                <h2>Ad-Soyad</h2>
+                            </label>
+                            <input id="ad" name="ad" class="formcontrol" onkeypress="Harf(event)" type="text"
+                                placeholder="Adınızı giriniz">
+                        </div>
+
+                        <div class="formgroup">
+                            <label for="email">
+                                <h2>e-Mail</h2>
+                            </label>
+                            <input class="formcontrol" type="email" id="mail" name="mail"
+                                placeholder="Mail adresinizi giriniz">
+                        </div>
+
+                        <div class="formgroup">
+                            <label for="message">
+                                <h2>Mesaj</h2>
+                            </label>
+                            <textarea class="formcontrol" id="mesaj" name="mesaj"
+                                placeholder="Mesajınızı giriniz"></textarea>
+                        </div>
+
+                        <div class="formgroup">
+                            <label for="country">
+                                <h2>Şehir</h2>
+                            </label>
+                            <select class="formcontrol" name="city" id="">
+
+                                <option value="Ankara">Ankara</option>
+                                <option value="İstanbul">İstanbul</option>
+                                <option value="İzmir">İzmir</option>
+                                <option value="Sakarya">Sakarya</option>
+                                <option value="Kırşehir">Kırşehir</option>
+                                <option value="Diğer">Diğer</option>
+                            </select>
+                        </div>
+
+                        <div class="formgroup">
+                            <br>
+                            <h2>Doğum günü:</h2> <input type="date" id="bday" name="bday" class="formcontrol">
+                        </div>
+
+                        <div class="formgroup" style="font-size: xx-large;">
+                            <br>
+                            Erkek <input type="radio" class="big" name="cinsiyet" value="Erkek" id="erkek">
+                            Kadın <input type="radio" class="big" name="cinsiyet" value="Kadın" id="kadin">
+                        </div>
+                        <br>
+                        <div class="formgroup" style="font-size: x-large;">
+                            Ben robot değilim. <input type="checkbox" name="check" id="check" class="big">
+                        </div>
+                        <br>
+                        <input class="buton" type="submit" value="Gönder">
+                        <input class="buton" type="reset" value="Temizle">
+
+                    </form>
+
+                </div>
+                <div class="col-lg-5">
+
+                    <div class="iletisimbilgi">
+
+                        <h2 class="ie">İletişim</h2>
+
+                        <h4 class="ie">Telefon</h4>
+                        <p class="ie">+90 554 890 33 74</p>
+
+                        <h4 class="ie">Mail</h4>
+                        <p class="ie">gurkan.kaya@ogr.sakarya.edu.tr</p>
+
+                    </div>
+
+                </div>
             </div>
 
-            <div class="formgroup">
-                <label for="email"> <h2>e-Mail</h2> </label>
-                <input class="formcontrol" type="text" name="email" placeholder="Mail adresinizi giriniz">
-            </div>
-
-            <div class="formgroup">
-                <label for="message"> <h2>Mesaj</h2> </label>
-                <textarea class="formcontrol" name="message" id="" placeholder="Mesajınızı giriniz"></textarea>
-            </div>
-
-            <div class="formgroup">
-                <label for="country"><h2>Şehir</h2> </label>
-                <select class="formcontrol" name="city" id="">
-
-                    <option value="Ankara">Ankara</option>
-                    <option value="İstanbul">İstanbul</option>
-                    <option value="İzmir">İzmir</option>
-                    <option value="Sakarya">Sakarya</option>
-                    <option value="Kırşehir">Kırşehir</option>
-                    <option value="Diğer">Diğer</option>
-                </select>
-            </div>
-
-            <div class="formgroup">
-                <br>
-               <h2>Doğum günü:</h2>  <input type="date" name="bday" class="formcontrol">
-            </div>
-
-            <div class="formgroup" style="font-size: xx-large;">
-                <br>
-              Erkek <input type="radio" class="big" name="cinsiyet">
-               Kadın  <input type="radio" class="big" name="cinsiyet">
-            </div>
-            <br>
-            <input class="buton" type="submit" value="Gönder">
-            <input class="buton" type="reset" value="Temizle">
-
-        </form>
-
-        <div class="iletisimbilgi">
-
-            <h2 class="ie">İletişim</h2>
-
-            <h4 class="ie">Telefon</h4>
-            <p class="ie">+90 554 890 33 74</p>
-
-            <h4 class="ie">Mail</h4>
-            <p class="ie">gurkan.kaya@ogr.sakarya.edu.tr</p>
 
         </div>
 
     </main>
+
 
 
     <footer style="bottom: 0;">
@@ -156,6 +187,7 @@
     <script src="js/jquery-3.4.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/formicin.js"></script>
 </body>
 
 </html>
