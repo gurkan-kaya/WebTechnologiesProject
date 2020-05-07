@@ -96,7 +96,7 @@
 
 
 
-    <footer style="bottom: 0;">
+    <footer style=" position: absolute; bottom: 0;">
         <div id="share">
 
 
